@@ -98,7 +98,7 @@ const generateHTML = (answers) =>
 const init = () => {
   promptUser()
     // .then((answers) => writeFileAsync('README.md', generateHTML(answers)))
-    .then((answers) => fs.writeFile()))
+    .then((answers) => fs.writeFile())
     .then(() => console.log('Successfully wrote to README.md'))
     .catch((err) => console.error(err));
 };
