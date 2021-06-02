@@ -1,8 +1,11 @@
 # hw-09-nodejs-readme-generator
 
-I did not get very far with this project yet.
+## Work-in-Progress
 
-This was making sense to me earlier today
-.Then (tonight's last class on OOP) => !making sense anymore
+```
+index.js asks the questions
+Then inserts the answers into a newly created file = "Generate-README.md"
+This is done to avoid writing over this Repo README.md
+```
 
-- I will work on this tomorrow...
+### More to come this afternoon.
