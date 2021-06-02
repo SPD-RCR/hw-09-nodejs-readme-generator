@@ -29,3 +29,17 @@ ${answers.usage}
 ${answers.contributing}
 
 ## Tests
+
+${answers.tests}
+
+## License
+
+${answers.license}
+
+## GitHub username
+
+Feel free to review my GitHub profile: ${answers.github}
+
+## email address
+
+You can reach me with additional questions via ${answers.email}.

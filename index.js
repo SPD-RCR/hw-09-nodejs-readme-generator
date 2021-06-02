@@ -38,20 +38,20 @@ const promptUser = () => {
       message: 'What are the test instructions?',
     },
     {
-      type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username',
-    },
-    {
-      type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
-    },
-    {
       type: 'list',
       name: 'license',
       message: 'Which license are you going to use?',
       choices: ['MIT', 'GPLv2', 'Apache', 'none'],
+  },
+  {
+    type: 'input',
+    name: 'github',
+    message: 'What is your GitHub Username?',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address?',
   },
   ]);
 };
@@ -97,8 +97,7 @@ const generateHTML = (answers) =>
 // Bonus using writeFileAsync as a promise
 const init = () => {
   promptUser()
-    // .then((answers) => writeFileAsync('README.md', generateHTML(answers)))
-    .then((answers) => fs.writeFile())
+    .then((answers) => writeFileAsync('Generate-README.md', generateHTML(answers)))
     .then(() => console.log('Successfully wrote to README.md'))
     .catch((err) => console.error(err));
 };
