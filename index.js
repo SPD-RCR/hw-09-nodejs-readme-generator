@@ -29,7 +29,7 @@ const promptUser = () => {
     },
     {
       type: 'input',
-      name: 'contributing',
+      name: 'contribution',
       message: 'What are the contribution guidelines?',
     },
     {
@@ -58,47 +58,60 @@ const promptUser = () => {
 
 const generateHTML = (answers) =>
   `# ${answers.title}
-  
+
+  ![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-blue.svg)
+
   ## Table of Contents
 
-  * Description
+  * [Description](#Description)
 
-  * Installation
+  * [Installation Instructions](#installation-instructions)
 
-  * Usage
+  * [Usage Information](#usage-information)
 
-  * Contributing
+  * [Contribution Guidelines](#contribution-guidelines)
 
-  * Tests
+  * [Tests](#tests)
+
+  * [Questions](#Questions)
   
-  ## Description
+
+  ### Description
 
   ${answers.description}
 
   
-  ## Installation
+  ### Installation Instructions
   
   ${answers.installation}
 
-  ## Usage
+  ### Usage Instructions
 
   ${answers.usage}
 
-  ## Contributing
+  ### Contribution Guidelines
   
-  ${answers.contributing}
+  ${answers.contribution}
 
-  ## Tests
+  ### Tests
 
   ${answers.tests}
-  
+
+  ### Questions
+
+  License: ${answers.license}
+
+  Feel free to review my GitHub profile: [${answers.github}](https://github.com/${answers.github}/)
+
+  You can reach me with additional questions via ${answers.email}
+
   `;
 
 // Bonus using writeFileAsync as a promise
 const init = () => {
   promptUser()
-    .then((answers) => writeFileAsync('Generate-README.md', generateHTML(answers)))
-    .then(() => console.log('Successfully wrote to README.md'))
+    .then((answers) => writeFileAsync('GENERATED-README.md', generateHTML(answers)))
+    .then(() => console.log('Successfully wrote to GENERATED-README.md'))
     .catch((err) => console.error(err));
 };
 
