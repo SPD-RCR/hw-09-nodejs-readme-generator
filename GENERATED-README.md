@@ -1,6 +1,6 @@
-# README Generator
+# t
 
-  ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+  License: undefined
 
   ## Table of Contents
 
@@ -19,31 +19,31 @@
 
   ### Description
 
-  Answer questions to automatically generate a README.md
+  t
 
   
   ### Installation Instructions
   
-  Install it
+  t
 
   ### Usage Instructions
 
-  Answer questions
+  t
 
   ### Contribution Guidelines
   
-  Email me
+  t
 
   ### Tests
 
-  Test it
+  t
 
   ### Questions
 
-  License: MIT
+  License: undefined
 
-  Feel free to review my GitHub profile: [SPD-RCR](https://github.com/SPD-RCR/)
+  Feel free to review my GitHub profile: [t](https://github.com/t/)
 
-  You can reach me with additional questions via robertgeorge2@gmail.com
+  You can reach me with additional questions via t
 
   

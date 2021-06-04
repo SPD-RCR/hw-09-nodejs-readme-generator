@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const renderLicenseBadgeLink = require('./utils/generateMarkdown.js');
 
 // create writeFile function using promises instead of a callback function
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -59,9 +59,11 @@ const promptUser = () => {
 };
 
 const generateHTML = (answers) =>
+// console.log('renderLicenseBadgeLink:', renderLicenseBadgeLink(answers.license))
+
   `# ${answers.title}
 
-  ![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-blue.svg)
+  License: ${renderLicenseBadgeLink(answers.license)}
 
   ## Table of Contents
 
@@ -101,7 +103,7 @@ const generateHTML = (answers) =>
 
   ### Questions
 
-  License: ${answers.license}
+  License: ${renderLicenseBadgeLink(answers.license)}
 
   Feel free to review my GitHub profile: [${answers.github}](https://github.com/${answers.github}/)
 
