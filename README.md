@@ -22,7 +22,7 @@ This "command-line" application uses Node.JS and the NPM Inquirer package to qui
 
 ## Installation Instructions
 
-You MUST first run `npm install`. After you verify a `package.json` was added to your directory; you can run `npm i inquirer`.
+You MUST first run `npm install`. After you verify `package.json` was added to your directory; you can then run `npm i inquirer`.
 
 ## Usage Information
 
@@ -32,7 +32,10 @@ From the command-line, type `node index.js` to invoke or start the application. 
 
 ![Preview of a Genereated README](./assets/images/Preview-GENERATED-README.png)
 
-![Video Demo](https://drive.google.com/file/d/13j2YiIuJjbXACDhynkOzUAMYG3R1MQ0_/view)
+_Video Demo Walk-Through_
+![Video Demo Walk-through](./ assets/images/09-hw-README-Generator.png)
+
+<!-- ![](https://drive.google.com/file/d/13j2YiIuJjbXACDhynkOzUAMYG3R1MQ0_/view) -->
 
 ## Contribution Guidelines
 
