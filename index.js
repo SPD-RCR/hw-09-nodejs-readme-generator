@@ -79,28 +79,27 @@ ${generateMarkDown(answers.license)}
 * [Questions](#Questions)
 
 
-### Description
+## Description
 
 ${answers.description}
 
-
-### Installation Instructions
+## Installation Instructions
 
 ${answers.installation}
 
-### Usage Instructions
+## Usage Information
 
 ${answers.usage}
 
-### Contribution Guidelines
+## Contribution Guidelines
 
 ${answers.contribution}
 
-### Tests
+## Tests
 
 ${answers.tests}
 
-### Questions
+## Questions
 
 ${generateMarkDown(answers.license)}
 

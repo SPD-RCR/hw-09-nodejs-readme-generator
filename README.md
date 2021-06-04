@@ -1,13 +1,51 @@
-# hw-09-nodejs-readme-generator
+# HW-09 Node.JS: README Generator
 
-## Finished but...
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-- Need to record walk through and rewrite this README
+## Table of Contents
 
-```
-index.js asks the questions
-Then inserts the answers into a newly created file = "GENERATED-README.md"
-This is done to avoid writing over this Repo README.md
+- [Description](#Description)
 
-generateMarkDown.js creates the license button and related link based on which license is selected
-```
+- [Installation Instructions](#Installation-Instructions)
+
+- [Usage Information](#Usage-Information)
+
+- [Contribution Guidelines](#Contribution-Guidelines)
+
+- [Tests](#Tests)
+
+- [Questions](#Questions)
+
+## Description
+
+This "command-line" application uses Node.JS and the NPM Inquirer package to quickly and easily generate a README.md file with the input you supply about your project. -- This README file was created using this README Generator.
+
+## Installation Instructions
+
+You MUST first run `npm install`. After you verify a `package.json` was added to your directory; you can run `npm i inquirer`.
+
+## Usage Information
+
+From the command-line, type `node index.js` to invoke or start the application. Simply enter your answers to each of the questions. Followed by clicking the Enter or Return key. Use the up and down arrow keys to choose between the license selections.
+
+![Terminal screencap](https://github.com/SPD-RCR/hw-09-nodejs-readme-generator/assets/images/README-generator-terminal-screencap.png)
+
+![Preview of a Genereated README](https://github.com/SPD-RCR/hw-09-nodejs-readme-generator/assets/images/Preview-GENERATED-README.png)
+
+![Video Demo](https://drive.google.com/file/d/13j2YiIuJjbXACDhynkOzUAMYG3R1MQ0_/view)
+
+## Contribution Guidelines
+
+To contribute to this open source application use the links provided in the Questions section below.
+
+## Tests
+
+Currently there are no Testing processes. Feel free to contact me if you would like to contribute to this area.
+
+## Questions
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Feel free to review my GitHub profile: [SPD-RCR](https://github.com/SPD-RCR/)
+
+You can reach me with additional questions via [robertgeorge2@gmail.com](mailto:robertgeorge2@gmail.com)
