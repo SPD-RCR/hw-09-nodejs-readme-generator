@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
 
-const renderLicenseBadgeLink = require('./utils/generateMarkdown.js');
+const generateMarkDown = require('./utils/generateMarkDown.js');
 
 // create writeFile function using promises instead of a callback function
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -58,58 +58,57 @@ const promptUser = () => {
   ]);
 };
 
-const generateHTML = (answers) =>
-// console.log('renderLicenseBadgeLink:', renderLicenseBadgeLink(answers.license))
+const generateHTML = (answers) => 
 
-  `# ${answers.title}
+`# ${answers.title}
 
-  License: ${renderLicenseBadgeLink(answers.license)}
+${generateMarkDown(answers.license)}
 
-  ## Table of Contents
+## Table of Contents
 
-  * [Description](#Description)
+* [Description](#Description)
 
-  * [Installation Instructions](#installation-instructions)
+* [Installation Instructions](#Installation-Instructions)
 
-  * [Usage Information](#usage-information)
+* [Usage Information](#Usage-Information)
 
-  * [Contribution Guidelines](#contribution-guidelines)
+* [Contribution Guidelines](#Contribution-Guidelines)
 
-  * [Tests](#tests)
+* [Tests](#Tests)
 
-  * [Questions](#Questions)
-  
+* [Questions](#Questions)
 
-  ### Description
 
-  ${answers.description}
+### Description
 
-  
-  ### Installation Instructions
-  
-  ${answers.installation}
+${answers.description}
 
-  ### Usage Instructions
 
-  ${answers.usage}
+### Installation Instructions
 
-  ### Contribution Guidelines
-  
-  ${answers.contribution}
+${answers.installation}
 
-  ### Tests
+### Usage Instructions
 
-  ${answers.tests}
+${answers.usage}
 
-  ### Questions
+### Contribution Guidelines
 
-  License: ${renderLicenseBadgeLink(answers.license)}
+${answers.contribution}
 
-  Feel free to review my GitHub profile: [${answers.github}](https://github.com/${answers.github}/)
+### Tests
 
-  You can reach me with additional questions via ${answers.email}
+${answers.tests}
 
-  `;
+### Questions
+
+${generateMarkDown(answers.license)}
+
+Feel free to review my GitHub profile: [${answers.github}](https://github.com/${answers.github}/)
+
+You can reach me with additional questions via [${answers.email}](mailto:${answers.email})
+
+`;
 
 // Bonus using writeFileAsync as a promise
 const init = () => {
