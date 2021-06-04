@@ -28,9 +28,9 @@ You MUST first run `npm install`. After you verify a `package.json` was added to
 
 From the command-line, type `node index.js` to invoke or start the application. Simply enter your answers to each of the questions. Followed by clicking the Enter or Return key. Use the up and down arrow keys to choose between the license selections.
 
-![Terminal screencap](https://github.com/SPD-RCR/hw-09-nodejs-readme-generator/assets/images/README-generator-terminal-screencap.png)
+![Terminal screencap](./assets/images/README-generator-terminal-screencap.png)
 
-![Preview of a Genereated README](https://github.com/SPD-RCR/hw-09-nodejs-readme-generator/assets/images/Preview-GENERATED-README.png)
+![Preview of a Genereated README](./assets/images/Preview-GENERATED-README.png)
 
 ![Video Demo](https://drive.google.com/file/d/13j2YiIuJjbXACDhynkOzUAMYG3R1MQ0_/view)
 
