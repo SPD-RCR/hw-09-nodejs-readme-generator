@@ -33,9 +33,10 @@ From the command-line, type `node index.js` to invoke or start the application. 
 ![Preview of a Genereated README](./assets/images/Preview-GENERATED-README.png)
 
 _Video Demo Walk-Through_
-![Video Demo Walk-through](./ assets/images/09-hw-README-Generator.mp4)
 
-<!-- ![](https://drive.google.com/file/d/13j2YiIuJjbXACDhynkOzUAMYG3R1MQ0_/view) -->
+<!-- ![Video Demo Walk-through](./ assets/images/09-hw-README-Generator.mp4) -->
+
+![https://drive.google.com/file/d/13j2YiIuJjbXACDhynkOzUAMYG3R1MQ0_/view](https://drive.google.com/file/d/13j2YiIuJjbXACDhynkOzUAMYG3R1MQ0_/view)
 
 ## Contribution Guidelines
 
